@@ -1,0 +1,17 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c61225ce6d84c204633e240378a1e3d9042128240615c41f6c2c1c3e161a9823
+
+name:           editor
+version:        0.0.0
+build-type:     Simple
+license:        GPL-3
+
+library
+    build-depends:
+        base,
+        mtl
