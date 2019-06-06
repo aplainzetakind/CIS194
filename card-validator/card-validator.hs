@@ -26,5 +26,6 @@ validate = (== 0) . (`mod` 10) . sumDigits . doubleEveryOther . toDigitsRev
 main :: IO ()
 main = do
     arg <- fmap head getArgs
-    if validate . read $ arg then putStrLn "This is a valid credit card number"
-                             else putStrLn "This is not a valid credit card number"
+    if validate . read $ arg
+      then putStrLn "This is a valid credit card number"
+      else putStrLn "This is not a valid credit card number"
