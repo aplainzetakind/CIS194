@@ -6,7 +6,7 @@ import Data.List
 
 -- Exercise 1
 fun1' :: [Integer] -> Integer
-fun1' = product . map (flip (-) 2) . filter even
+fun1' = product . map (subtract 2) . filter even
 
 fun2' :: Integer -> Integer
 fun2' = sum . filter even . takeWhile (>1) . iterate f
